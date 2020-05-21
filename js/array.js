@@ -11,9 +11,12 @@ let facts = [
     'Chuck Norris is the only person that can punch a cyclops between the eye.'
 ];
 
+let b1 = document.querySelector('button');
+
 let color = ('#'+(Math.random()*0xFFFFFF<<0).toString(16));
 
-button.addEventListener('click', function(){document.getElementById('facts_citation').innerHTML = facts[Math.floor(Math.random() * 10)];});
-button.addEventListener('click', function(){document.querySelector('p.facts_author').style.color = color});
-button.addEventListener('click', function(){document.getElementById('facts_citation').style.color = color});
-document.body.style.background = color;
+b1.addEventListener('click', function(){document.getElementById('facts_citation').innerHTML = facts[Math.floor(Math.random() * 10)];});
+b1.addEventListener('click', function(){document.getElementById('facts_citation').style.color = color});
+b1.addEventListener('click', function(){document.getElementById('facts_author').style.color = color});
+b1.addEventListener('click', function(){document.getElementById('button').style.background = color});
+b1.addEventListener('click', function(){document.getElementById('background_color').style.background = color});

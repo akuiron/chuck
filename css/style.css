@@ -10,21 +10,27 @@ body {
     font-size: 35px;
     color: #FB6863;
     font-family: 'Nanum Pen Script', cursive;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #facts_citation {
     text-align: center;
 }
 
-.facts_author {
+#facts_author {
     text-align: right;
 }
 
-button {
+#button {
     background-color: #FB6863;
     border-style: none;
-    padding: 10px;
+    padding: 20px;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     float: right;
+    position: absolute;
+    top: 500px;
+    right: 650px;
 }
