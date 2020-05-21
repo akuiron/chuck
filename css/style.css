@@ -1,0 +1,30 @@
+body {
+    background-color: #FB6863;
+}
+
+.punchs {
+    padding: 15px 30px;  
+    background-color: white;
+    width: 600px;
+    height: 350px;
+    font-size: 35px;
+    color: #FB6863;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#facts_citation {
+    text-align: center;
+}
+
+.facts_author {
+    text-align: right;
+}
+
+button {
+    background-color: #FB6863;
+    border-style: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    float: right;
+}
