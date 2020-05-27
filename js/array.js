@@ -13,10 +13,11 @@ let facts = [
 
 let b1 = document.querySelector('button');
 
-let color = ('#'+(Math.random()*0xFFFFFF<<0).toString(16));
-
-b1.addEventListener('click', function(){document.getElementById('facts_citation').innerHTML = facts[Math.floor(Math.random() * 10)];});
-b1.addEventListener('click', function(){document.getElementById('facts_citation').style.color = color});
-b1.addEventListener('click', function(){document.getElementById('facts_author').style.color = color});
-b1.addEventListener('click', function(){document.getElementById('button').style.background = color});
-b1.addEventListener('click', function(){document.getElementById('background_color').style.background = color});
+b1.onclick = function role() {
+    let color = ('#'+(Math.random()*0xFFFFFF<<0).toString(16));
+    document.getElementById('facts_citation').innerHTML = facts[Math.floor(Math.random() * 10)];
+    document.getElementById('facts_citation').style.color = color;
+    document.getElementById('facts_author').style.color = color;
+    document.getElementById('button').style.background = color;
+    document.getElementById('background_color').style.background = color;
+}
